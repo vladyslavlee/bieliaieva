@@ -25,7 +25,9 @@
             </div>
           }
 
-          <i class="note">{{ product.note }}</i>
+          @if (product.note) {
+            <i class="note">{{ product.note }}</i>
+          }
         </div>
       </section>
     }
