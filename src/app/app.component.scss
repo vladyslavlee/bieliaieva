@@ -1,0 +1,25 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  .image {
+    grid-column: span 1;
+  }
+
+  .information {
+    grid-column: span 2;
+  }
+
+  &:nth-child(even) {
+    .image {
+      order: 1;
+    }
+  }
+}
