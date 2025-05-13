@@ -1,14 +1,14 @@
 .container {
   max-width: 600px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 16px;
 }
 
 .product {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  padding: 2rem 0;
+  gap: 16px;
+  padding: 32px 0;
   letter-spacing: 1px;
 
   &:nth-child(even) {
@@ -42,39 +42,35 @@
   }
 
   .brand {
-    font-size: 0.8rem;
-    margin-bottom: 0.2rem;
+    font-size: 14px;
   }
 
   .name {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
   }
 
   .description {
-    margin-bottom: 1rem;
-    font-size: 0.6rem;
+    margin-bottom: 16px;
+    font-size: 10px;
     text-align: justify;
   }
 
   .prices {
     & + .prices {
-      margin-top: 1rem;
+      margin-top: 16px;
     }
 
     .price  {
-      font-size: 2rem;
+      font-size: 32px;
     }
 
-    .available {
-      font-size: 0.6rem;
-    }
-
+    .available,
     .size {
-      font-size: 0.6rem;
+      font-size: 10px;
     }
   }
 
   .note {
-    font-size: 0.5rem;
+    font-size: 8px;
   }
 }
