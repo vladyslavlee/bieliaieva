@@ -1,4 +1,5 @@
 {
+  "currency": "zl",
   "products": [
     {
       "brand": "Sungboon Editor",
@@ -7,10 +8,10 @@
       "images": [
         "green-tomato/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "80zl",
-          "available": 4
+          "price": 80,
+          "count": 4
         }
       ]
     },
@@ -21,10 +22,10 @@
       "images": [
         "rice-spf/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "55zl",
-          "available": 2
+          "price": 55,
+          "count": 2
         }
       ]
     },
@@ -35,10 +36,10 @@
       "images": [
         "vt/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "115zl",
-          "available": 4
+          "price": 115,
+          "count": 4
         }
       ]
     },
@@ -49,15 +50,16 @@
       "images": [
         "spf-round-lab/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "59zl",
-          "available": 3,
+          "price": 59,
+          "count": 4,
+          "newCount": 3,
           "size": "50ml"
         },
         {
-          "price": "30zl",
-          "available": 4,
+          "price": 30,
+          "count": 4,
           "size": "20ml"
         }
       ]
@@ -69,15 +71,15 @@
       "images": [
         "toner-big-round-lab/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "110zl",
-          "available": 2,
+          "price": 110,
+          "count": 2,
           "size": "500ml"
         },
         {
-          "price": "30zl",
-          "available": 2,
+          "price": 30,
+          "count": 2,
           "size": "100ml"
         }
       ]
@@ -89,10 +91,10 @@
       "images": [
         "toner-birch-round-lab/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "90zl",
-          "available": 2
+          "price": 90,
+          "count": 2
         }
       ],
       "note": "* пошкоджене пакування"
@@ -104,10 +106,10 @@
       "images": [
         "120ml-cream-round-lab/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "140zl",
-          "available": 2
+          "price": 140,
+          "count": 2
         }
       ]
     },
@@ -118,10 +120,10 @@
       "images": [
         "calming-cream/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "90zl",
-          "available": 3
+          "price": 90,
+          "count": 3
         }
       ]
     },
@@ -132,10 +134,10 @@
       "images": [
         "clean-round-lab/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "60zl",
-          "available": 4
+          "price": 60,
+          "count": 4
         }
       ]
     },
@@ -146,10 +148,10 @@
       "images": [
         "collagen-mask/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "110zl",
-          "available": 4
+          "price": 110,
+          "count": 4
         }
       ]
     },
@@ -160,10 +162,10 @@
       "images": [
         "spicule-mask-1000/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "50zl",
-          "available": 4
+          "price": 50,
+          "count": 4
         }
       ]
     },
@@ -174,10 +176,10 @@
       "images": [
         "spicule-mask-yellow/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "18zl",
-          "available": 3
+          "price": 18,
+          "count": 3
         }
       ]
     },
@@ -188,10 +190,10 @@
       "images": [
         "clean-it-zero/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "110zl",
-          "available": 2
+          "price": 110,
+          "count": 2
         }
       ]
     },
@@ -202,10 +204,10 @@
       "images": [
         "collagen-amp-mask/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "14zl",
-          "available": 2
+          "price": 14,
+          "count": 2
         }
       ]
     },
@@ -216,10 +218,10 @@
       "images": [
         "calming-amp-mask/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "14zl",
-          "available": 2
+          "price": 14,
+          "count": 2
         }
       ]
     },
@@ -230,10 +232,10 @@
       "images": [
         "green-amp-mask/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "14zl",
-          "available": 2
+          "price": 14,
+          "count": 2
         }
       ]
     },
@@ -244,10 +246,10 @@
       "images": [
         "yellow-amp-mask/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "14zl",
-          "available": 2
+          "price": 14,
+          "count": 2
         }
       ]
     },
@@ -258,10 +260,10 @@
       "images": [
         "niacyn-shot/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "14zl",
-          "available": 2
+          "price": 14,
+          "count": 2
         }
       ]
     },
@@ -272,10 +274,10 @@
       "images": [
         "hyal-shot/1.png"
       ],
-      "prices": [
+      "available": [
         {
-          "price": "14zl",
-          "available": 2
+          "price": 14,
+          "count": 2
         }
       ]
     }

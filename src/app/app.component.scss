@@ -55,8 +55,8 @@
     text-align: justify;
   }
 
-  .prices {
-    & + .prices {
+  .available {
+    & + .available {
       margin-top: 16px;
     }
 
@@ -64,9 +64,14 @@
       font-size: 32px;
     }
 
-    .available,
+    .count-wrapper,
     .size {
       font-size: 10px;
+    }
+
+    .old-count {
+      text-decoration: line-through;
+      margin-right: 6px;
     }
   }
 

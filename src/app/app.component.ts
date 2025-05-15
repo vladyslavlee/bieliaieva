@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject, OnDestroy } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Product, ProductsService } from './products.service';
+import { ApiDataResponse, Product, ProductsService } from './products.service';
 import { CommonModule } from '@angular/common';
 import { Subscription, tap } from 'rxjs';
 
@@ -17,10 +17,10 @@ export class AppComponent implements OnDestroy {
 
   private subscription: Subscription | null = null;
 
-  public products: Product[] = [];
+  public data: ApiDataResponse | null = null;
 
   constructor() {
-    this.getProducts();
+    this.getApiData();
   }
 
   public ngOnDestroy(): void {
@@ -28,11 +28,11 @@ export class AppComponent implements OnDestroy {
     this.subscription = null;
   }
 
-  private getProducts(): void {
-    this.subscription = this.productsService.getProducts()
+  private getApiData(): void {
+    this.subscription = this.productsService.getApiData()
       .pipe(
-        tap((products: Product[]) => {
-          this.products = products;
+        tap((data: ApiDataResponse) => {
+          this.data = data;
           this.cdr.detectChanges();
         })
       ).subscribe();

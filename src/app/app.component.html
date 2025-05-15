@@ -1,36 +1,46 @@
 <main class="main">
   <div class="container">
-    @for (product of products; track product) {
-      <section class="product">
-        <div class="image-wrapper">
-          <img class="image" [src]="'assets/products/images/' + product.images[0]" [alt]="product.name" loading="lazy">
-        </div>
+    @if (data) {
+      @for (product of data.products; track product) {
+        <section class="product">
+          <div class="image-wrapper">
+            <img class="image" [src]="'assets/products/images/' + product.images[0]" [alt]="product.name" loading="lazy">
+          </div>
 
-        <div class="information">
-          <p class="brand">{{ product.brand }}</p>
-          <h2 class="name">{{ product.name }}</h2>
+          <div class="information">
+            <p class="brand">{{ product.brand }}</p>
+            <h2 class="name">{{ product.name }}</h2>
 
-          <p class="description">{{ product.description }}</p>
+            <p class="description">{{ product.description }}</p>
 
-          @for (price of product.prices; track price) {
-            <div class="prices">
-              <p class="price">
-                {{ price.price }}
-                @if (price.size) {
-                  <span class="size"> - {{ price.size }}</span>
-                }
-              </p>
+            @for (available of product.available; track available) {
+              <div class="available">
+                <p class="price">
+                  {{ available.price }}{{ data.currency }}
+                  @if (available.size) {
+                    <span class="size"> - {{ available.size }}</span>
+                  }
+                </p>
 
-              <p class="available">В наявності {{ price.available }} шт.</p>
-            </div>
-          }
+                <p class="count-wrapper">
+                  В наявності
+                  <span class="count" [class.old-count]="available.newCount">{{ available.count }} шт.</span>
 
-          @if (product.note) {
-            <i class="note">{{ product.note }}</i>
-          }
-        </div>
-      </section>
+                  @if (available.newCount) {
+                    <span class="new-count">{{ available.newCount }} шт.</span>
+                  }
+                </p>
+              </div>
+            }
+
+            @if (product.note) {
+              <i class="note">{{ product.note }}</i>
+            }
+          </div>
+        </section>
+      }
     }
+
   </div>
 </main>
 
