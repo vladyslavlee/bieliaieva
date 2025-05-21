@@ -1,3 +1,17 @@
+.header {
+  padding: 16px 0;
+  margin-bottom: 40px;
+
+  .title {
+    text-align: center;
+  }
+
+  .delivery,
+  .sale {
+    margin-top: 12px;
+  }
+}
+
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -58,6 +72,11 @@
   .available {
     & + .available {
       margin-top: 16px;
+    }
+
+    &.not-available {
+      color: #b3b3b3;
+      user-select: none;
     }
 
     .price  {

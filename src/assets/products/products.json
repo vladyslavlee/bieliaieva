@@ -11,7 +11,8 @@
       "available": [
         {
           "price": 80,
-          "count": 4
+          "count": 4,
+          "newCount": 2
         }
       ]
     },
@@ -39,7 +40,8 @@
       "available": [
         {
           "price": 115,
-          "count": 4
+          "count": 4,
+          "newCount": 3
         }
       ]
     },
@@ -52,15 +54,16 @@
       ],
       "available": [
         {
+          "price": 30,
+          "count": 4,
+          "newCount": 0,
+          "size": "20ml"
+        },
+        {
           "price": 59,
           "count": 4,
           "newCount": 3,
           "size": "50ml"
-        },
-        {
-          "price": 30,
-          "count": 4,
-          "size": "20ml"
         }
       ]
     },
@@ -75,7 +78,8 @@
         {
           "price": 110,
           "count": 2,
-          "size": "500ml"
+          "size": "500ml",
+          "newCount": 1
         },
         {
           "price": 30,
@@ -109,7 +113,8 @@
       "available": [
         {
           "price": 140,
-          "count": 2
+          "count": 2,
+          "newCount": 1
         }
       ]
     },
@@ -123,7 +128,8 @@
       "available": [
         {
           "price": 90,
-          "count": 3
+          "count": 3,
+          "newCount": 2
         }
       ]
     },
@@ -137,7 +143,8 @@
       "available": [
         {
           "price": 60,
-          "count": 4
+          "count": 4,
+          "newCount": 2
         }
       ]
     },
@@ -151,7 +158,8 @@
       "available": [
         {
           "price": 110,
-          "count": 4
+          "count": 4,
+          "newCount": 3
         }
       ]
     },

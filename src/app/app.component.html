@@ -1,4 +1,19 @@
-<main class="main">
+<header class="header">
+  <div class="container">
+    <p class="title">Як зробити замовлення:</p>
+    <p>1 - зробіть скріншот обраного товару;</p>
+    <p>2 - надішліть його мені в дірект Instagram (<a href="https://instagram.com/bieliaievaa" target="_blank">&#64;bieliaievaa</a>) або у Telegram (<a href="https://t.me/bieliaieva" target="_blank">&#64;bieliaieva</a>);</p>
+
+    <p class="delivery">
+      Вартість доставки поштоматом InPost від 16,99 zł. Також можемо відправити будь-яким зручним для вас способом.
+    </p>
+    <p class="sale">
+      <b>При замовленні від 200 zł — знижка 20% на все замовлення + подарунки!</b>
+    </p>
+  </div>
+</header>
+
+<main>
   <div class="container">
     @if (data) {
       @for (product of data.products; track product) {
@@ -14,7 +29,7 @@
             <p class="description">{{ product.description }}</p>
 
             @for (available of product.available; track available) {
-              <div class="available">
+              <div class="available" [class.not-available]="available.newCount === 0">
                 <p class="price">
                   {{ available.price }}{{ data.currency }}
                   @if (available.size) {
@@ -24,9 +39,9 @@
 
                 <p class="count-wrapper">
                   В наявності
-                  <span class="count" [class.old-count]="available.newCount">{{ available.count }} шт.</span>
+                  <span class="count" [class.old-count]="available.newCount || available.newCount === 0">{{ available.count }} шт.</span>
 
-                  @if (available.newCount) {
+                  @if (available.newCount || available.newCount === 0) {
                     <span class="new-count">{{ available.newCount }} шт.</span>
                   }
                 </p>
